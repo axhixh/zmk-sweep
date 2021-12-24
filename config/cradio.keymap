@@ -21,46 +21,46 @@
                 
        	default_layer {
 		bindings = <
-		&kp Q      &kp W      &kp F      &kp P      &kp B       &kp J     &kp L      &kp U      &kp Y      &kp  QUOT
-		&mt LGUI A &mt LCTL R &mt LALT S &mt LSFT T &kp G       &kp H     &mt RSFT N &mt RALT E &mt RCTL I &mt RGUI O
-		&kp Z      &kp X      &kp C      &kp D      &kp B	    &kp K     &kp H      &kp CMMA   &kp DOT    &kp FSLH
-                                         &lt 1 BSPC &lt 2 RET   &lt 3 TAB &lt 4 SPC 
+		&kp Q &kp W &kp F &kp P &lt 1 B    &lt 4 J &kp L &kp U    &kp Y   &kp  QUOT
+		&kp A &kp R &kp S &kp T &kp G      &kp H   &kp N &kp E    &kp I   &kp O
+		&kp Z &kp X &kp C &kp D &kp B	   &kp K   &kp H &kp CMMA &kp DOT &kp FSLH
+                &mt LSFT BSPC &lt 2 RET            &lt 3 TAB &mt RSFT SPC 
 		>;
 		};
 
        	one_layer {
 		bindings = <
-		&kp EXCL        &kp AT      &kp HASH     &kp DLLR       &kp PRCT		&kp BSLH     &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR 
-		&kp LGUI        &kp LCTL    &kp LALT     &kp LSFT       &kp K_MUTE 		&kp NUM_6    &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp LS(LG(TAB)) &kp LG(TAB) &kp LC(LEFT) &kp LC(RIGHT)  &kp C_VOL_DN 	&kp MINUS    &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
-					                             &trans         &kp ESC  		&kp LC(LEFT) &kp LC(RIGHT)
+		&kp EXCL &kp AT   &kp HASH &trans  &trans	&kp BSLH  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR 
+		&sk LGUI &sk LCTL &sk LALT &trans  &trans 	&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
+		&kp LGUI &kp LCTL &kp LALT &trans  &trans	&kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
+	        &mt LSFT DEL &kp ESC                            &kp LC(LEFT) &kp LC(RIGHT)
 		>;
 		};
 		
-		two_layer {
+	two_layer {
 		bindings = <
 		&kp C_PREV &kp C_PP &kp C_NEXT &kp C_BRI_UP &kp C_VOL_UP    &kp CAPS     &kp PSCRN &kp SLCK  &kp LC(LG(3)) &kp LC(LG(4)) 
-		&kp LGUI   &kp LCTL &kp LALT   &kp LSFT     &kp K_MUTE 	    &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &kp INS
-		&trans     &trans   &none      &kp C_BRI_DN &kp C_VOL_DN   	&kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans
-					                   &kp DEL      &trans  		&kp LC(LEFT) &kp LC(RIGHT)
+		&sk LGUI   &sk LCTL &sk LALT   &kp LSFT     &kp K_MUTE 	    &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &kp INS
+		&kp LGUI   &kp LCTL &kp LALT   &kp C_BRI_DN &kp C_VOL_DN    &kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans
+		&trans     &trans  		                            &kp LC(LEFT) &kp LC(RIGHT)
 		>;
 		};	
 		
-		three_layer {
+	three_layer {
 		bindings = <
-		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE 		&kp C_BRI_UP  &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI 
-		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN 	&kp C_BRI_DN  &trans       &trans       &trans       &trans   
-					           &kp DEL  &kp ESC  		&trans        &kp SPC 
+		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE 	&bt BT_CLR    &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
+		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN 	&trans        &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI 
+		&mt LSFT DEL &kp ESC  		                &trans        &trans 
 		>;
 		};	
         
         four_layer {
 		bindings = <
-		&kp EXCL        &kp AT      &kp HASH     &kp DLLR      &kp PRCT     &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR
-		&kp NUM_1       &kp NUM_2   &kp NUM_3    &kp NUM_4     &kp NUM_5    &kp C_BRI_UP  &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI 
-		&kp LS(LG(TAB)) &kp LG(TAB) &kp LC(LEFT) &kp LC(RIGHT) &kp GRAVE	&kp C_BRI_DN  &trans       &trans       &trans       &trans   
-					                             &kp DEL       &kp ESC  	&kp TAB       &trans 
+		&kp EXCL        &kp AT      &kp HASH  &kp DLLR  &kp PRCT     &trans  &trans &kp STAR  &kp LPAR  &kp RPAR
+		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &trans  &trans &sk RALT  &sk RCTL  &sk RGUI 
+		&kp LS(LG(TAB)) &kp LG(TAB) &kp NUM_9 &kp NUM_0 &kp GRAVE    &trans  &trans &kp RALT  &kp RCTL  &kp RGUI  
+		&mt LSFT DEL &kp ESC 	                                     &kp TAB &mt RSFT SPC 
 		>;
 		};	
 	};

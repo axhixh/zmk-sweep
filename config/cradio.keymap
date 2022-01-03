@@ -70,7 +70,7 @@
             combo_down {
                timeout-ms = <50>;
                key-positions = <25  26>;
-               bindings = <&kp UP>;
+               bindings = <&kp DOWN>;
             };
 
         };

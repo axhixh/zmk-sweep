@@ -27,13 +27,13 @@
 
             combo_lgui {
                 timeout-ms = <50>;
-                key-positions = <11 12>;
+                key-positions = <10 11>;
                 bindings = <&kp LGUI>;
             };
 
             combo_lctl {
                 timeout-ms = <50>;
-                key-positions = <12 13>;
+                key-positions = <11 12>;
                 bindings = <&kp LCTL>;
             };
 
@@ -45,19 +45,19 @@
 
             combo_ralt {
                 timeout-ms = <50>;
-                key-positions = <17 18>;
+                key-positions = <15 16>;
                 bindings = <&kp RALT>;
             };
            
 	    combo_rctl {
                 timeout-ms = <50>;
-                key-positions = <18 19>;
+                key-positions = <17 18>;
                 bindings = <&kp RCTL>;
             };
 
 	    combo_rgui {
                timeout-ms = <50>;
-               key-positions = <19 20>;
+               key-positions = <18  19>;
                bindings = <&kp RGUI>;
             };
 
@@ -71,7 +71,7 @@
 		&kp Q &kp W &kp F &kp P &lt 2 B    &lt 3 J &kp L &kp U    &kp Y   &kp  QUOT
 		&kp A &kp R &kp S &kp T &kp G      &kp M   &kp N &kp E    &kp I   &kp O
 		&kp Z &kp X &kp C &kp D &kp V      &kp K   &kp H &kp CMMA &kp DOT &kp FSLH
-                &mt LSFT RET &lt 1 BSPC            &lt 4 SPC &mt RSFT TAB 
+        &mt LSFT RET &lt 1 BSPC            &lt 4  TAB &mt RSFT SPC 
 		>;
 		};
 
@@ -98,7 +98,7 @@
 		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &trans  &trans &kp STAR  &kp LPAR  &kp RPAR
 		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE      &trans  &trans &sk RALT  &sk RCTL  &sk RGUI 
 		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN    &trans  &trans &kp RALT  &kp RCTL  &kp RGUI 
-		&mt LSFT ESC &kp DEL  		                &kp SPC &mt RSFT TAB 
+		&mt LSFT ESC &kp DEL  		                &kp TAB &mt RSFT SPC 
 		>;
         };	
         

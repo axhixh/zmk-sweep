@@ -11,7 +11,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <250>;
+    tapping_term_ms = <200>;
 };
 
 / { 
@@ -27,7 +27,7 @@
 
             combo_lgui {
                 timeout-ms = <50>;
-                key-positions = <10 11>;
+                key-positions = <13 14>;
                 bindings = <&kp LGUI>;
             };
 
@@ -39,13 +39,13 @@
 
             combo_lalt {
                 timeout-ms = <50>;
-                key-positions = <13 14>;
+                key-positions = <10 11>;
                 bindings = <&kp LALT>;
             };
 
             combo_ralt {
                 timeout-ms = <50>;
-                key-positions = <15 16>;
+                key-positions = <18  19>;
                 bindings = <&kp RALT>;
             };
            
@@ -57,7 +57,7 @@
 
 	    combo_rgui {
                timeout-ms = <50>;
-               key-positions = <18  19>;
+               key-positions = <15 16>;
                bindings = <&kp RGUI>;
             };
 
@@ -73,6 +73,18 @@
                bindings = <&kp DOWN>;
             };
 
+            combo_l2 {
+               timeout-ms = <50>;
+               key-positions = <30 31>;
+               bindings = <&mo 2>;
+            };
+
+            combo_l3 {
+               timeout-ms = <50>;
+               key-positions = <32 33>;
+               bindings = <&mo 3>;
+            };
+
         };
 
         keymap {
@@ -80,10 +92,10 @@
                 
        	default_layer {
 		bindings = <
-		&kp Q &kp W &kp F &kp P &lt 2 B    &lt 3 J &kp L &kp U    &kp Y   &kp  QUOT
+		&kp Q &kp W &kp F &kp P &lt 2 B    &lt 3 J &kp L &kp U    &kp Y   &kp QUOT
 		&kp A &kp R &kp S &kp T &kp G      &kp M   &kp N &kp E    &kp I   &kp O
 		&kp Z &kp X &kp C &kp D &kp V      &kp K   &kp H &kp CMMA &kp DOT &kp FSLH
-        &mt LSFT RET &lt 1 BSPC            &lt 4  TAB &mt RSFT SPC 
+        &mt LSFT BSPC &lt 1 RET            &lt 4  TAB &mt RSFT SPC 
 		>;
 		};
 
@@ -101,7 +113,7 @@
 		&kp C_PREV   &kp C_PP &kp C_NEXT &trans &trans   &kp CAPS     &kp PSCRN &kp SLCK  &kp LC(LG(3)) &kp LC(LG(4)) 
 		&sk LGUI     &sk LCTL &sk LALT   &trans &trans   &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &kp INS
 		&kp LGUI     &kp LCTL &kp LALT   &trans &trans   &kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans
-		&mt LSFT ESC &kp DEL  		                 &kp LC(LEFT) &kp LC(RIGHT)
+		&mt LSFT DEL &kp ESC  		                 &kp LC(LEFT) &kp LC(RIGHT)
 		>;
 		};	
 		
@@ -110,7 +122,7 @@
 		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &trans  &trans &kp STAR  &kp LPAR  &kp RPAR
 		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE      &trans  &trans &sk RALT  &sk RCTL  &sk RGUI 
 		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN    &trans  &trans &kp RALT  &kp RCTL  &kp RGUI 
-		&mt LSFT ESC &kp DEL  		                &kp TAB &mt RSFT SPC 
+		&mt LSFT DEL &kp ESC  		                &kp TAB &mt RSFT SPC 
 		>;
         };	
         
@@ -119,7 +131,7 @@
 		&kp EXCL        &kp AT      &kp HASH  &kp DLLR  &kp PRCT     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &bt BT_CLR    &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
 		&kp LS(LG(TAB)) &kp LG(TAB) &kp NUM_9 &kp NUM_0 &kp GRAVE    &trans        &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI  
-		&mt LSFT ESC &kp DEL 	                                     &trans        &trans 
+		&mt LSFT DEL &kp ESC 	                                     &trans        &trans 
 		>;
 		};	
 	};

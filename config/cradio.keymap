@@ -11,7 +11,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;
+    tapping_term_ms = <400>;
 };
 
 / { 
@@ -85,12 +85,18 @@
                bindings = <&mo 3>;
             };
 
+            combo_l0 {
+               timeout-ms = <50>;
+               key-positions = <14 15>;
+               bindings = <&to 1>;
+            };
+
         };
 
         keymap {
                 compatible = "zmk,keymap";
                 
-       	default_layer {
+    default_layer {
 		bindings = <
 		&kp Q &kp W &kp F &kp P &lt 2 B    &lt 3 J &kp L &kp U    &kp Y   &kp QUOT
 		&kp A &kp R &kp S &kp T &kp G      &kp M   &kp N &kp E    &kp I   &kp O
@@ -99,7 +105,7 @@
 		>;
 		};
 
-       	one_layer {
+    one_layer {
 		bindings = <
 		&kp EXCL &kp AT   &kp HASH &kp C_BRI_UP &kp C_VOL_UP  &kp BSLH  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR 
 		&sk LGUI &sk LCTL &sk LALT &kp LSFT     &kp K_MUTE    &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
@@ -110,29 +116,40 @@
 		
 	two_layer {
 		bindings = <
-		&kp C_PREV   &kp C_PP &kp C_NEXT &trans &trans   &kp CAPS     &kp PSCRN &kp SLCK  &kp LC(LG(3)) &kp LC(LG(4)) 
-		&sk LGUI     &sk LCTL &sk LALT   &trans &trans   &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &kp INS
-		&kp LGUI     &kp LCTL &kp LALT   &trans &trans   &kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans
+		&kp C_PREV   &kp C_PP &kp C_NEXT &trans   &trans   &kp CAPS     &kp PSCRN &kp SLCK  &kp LC(LG(3)) &kp LC(LG(4)) 
+		&sk LGUI     &sk LCTL &sk LALT   &kp LSFT &trans   &kp LEFT     &kp DOWN  &kp UP    &kp RIGHT     &kp INS
+		&kp LGUI     &kp LCTL &kp LALT   &kp LSFT &trans   &kp HOME     &kp PG_DN &kp PG_UP &kp END       &trans
 		&mt LSFT DEL &kp ESC  		                 &kp LC(LEFT) &kp LC(RIGHT)
 		>;
 		};	
 		
 	three_layer {
 		bindings = <
-		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &trans  &trans &kp STAR  &kp LPAR  &kp RPAR
-		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE      &trans  &trans &sk RALT  &sk RCTL  &sk RGUI 
-		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN    &trans  &trans &kp RALT  &kp RCTL  &kp RGUI 
+		&kp F1 &kp F2  &kp F3  &kp F4   &kp C_VOL_UP    &trans  &trans   &kp STAR  &kp LPAR  &kp RPAR
+		&kp F5 &kp F6  &kp F7  &kp F8   &kp K_MUTE      &trans  &kp RSFT &sk RALT  &sk RCTL  &sk RGUI 
+		&kp F9 &kp F10 &kp F11 &kp F12  &kp C_VOL_DN    &trans  &kp RSFT &kp RALT  &kp RCTL  &kp RGUI 
 		&mt LSFT DEL &kp ESC  		                &kp TAB &mt RSFT SPC 
 		>;
         };	
         
-        four_layer {
+    four_layer {
 		bindings = <
 		&kp EXCL        &kp AT      &kp HASH  &kp DLLR  &kp PRCT     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &bt BT_CLR    &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
-		&kp LS(LG(TAB)) &kp LG(TAB) &kp NUM_9 &kp NUM_0 &kp GRAVE    &trans        &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI  
+		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &to 5         &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
+		&kp LS(LG(TAB)) &kp LG(TAB) &kp NUM_9 &kp NUM_0 &kp GRAVE    &bt BT_CLR    &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI  
 		&mt LSFT DEL &kp ESC 	                                     &trans        &trans 
 		>;
 		};	
+
+    five_layer {
+		bindings = <
+		&none &none &none &none &none    &none  &none &none &none &none
+		&none &none &none &none &none    &none  &none &none &none &none
+		&none &none &none &none &none    &none  &none &none &none &none 
+		&none &none 	                 &none  &none
+		>;
+		};	
+    };
+
 	};
 };

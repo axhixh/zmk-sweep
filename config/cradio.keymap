@@ -135,7 +135,7 @@
     four_layer {
 		bindings = <
 		&kp EXCL        &kp AT      &kp HASH  &kp DLLR  &kp PRCT     &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &to 5         &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
+		&kp NUM_1       &kp NUM_2   &kp NUM_3 &kp NUM_4 &kp NUM_5    &tog 5        &kp RSFT     &sk RALT     &sk RCTL     &sk RGUI 
 		&kp LS(LG(TAB)) &kp LG(TAB) &kp NUM_9 &kp NUM_0 &kp GRAVE    &bt BT_CLR    &kp RSFT     &kp RALT     &kp RCTL     &kp RGUI  
 		&mt LSFT DEL &kp ESC 	                                     &trans        &trans 
 		>;
@@ -143,10 +143,10 @@
 
     five_layer {
 		bindings = <
-		&none &none &none &none &none    &none  &none &none &none &none
-		&none &none &none &none &none    &none  &none &none &none &none
-		&none &none &none &none &none    &none  &none &none &none &none 
-		&none &none 	                 &none  &none
+		&none &none &none &none &none    &none   &none &none &none &none
+		&none &none &none &none &none    &trans  &none &none &none &none
+		&none &none &none &none &none    &none   &none &none &none &none 
+		&none &none 	                 &none   &none
 		>;
 		};	
     };

@@ -102,9 +102,9 @@
         
             two_layer {
                 bindings = <
-                &sk LCTL  &sk LALT  &sk LGUI  &LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
-                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT   &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5      &kp LG(0)       &kp CAPS     &caps_word &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
+                &sk LCTL  &sk LALT  &sk LGUI  &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
+                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
+                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5         &kp LG(0)       &kp CAPS     &caps_word &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
                 &to 0 &to 0                                              &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };    

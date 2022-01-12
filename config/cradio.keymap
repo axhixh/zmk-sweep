@@ -47,13 +47,13 @@
                 bindings = <&kp RALT>;
             };
            
-	    combo_rctl {
+            combo_rctl {
                 timeout-ms = <50>;
                 key-positions = <17 18>;
                 bindings = <&kp RCTL>;
             };
 
-	    combo_rgui {
+            combo_rgui {
                timeout-ms = <50>;
                key-positions = <15 16>;
                bindings = <&kp RGUI>;
@@ -82,67 +82,67 @@
         keymap {
                 compatible = "zmk,keymap";
                 
-    default_layer {
-		bindings = <
-		&kp Q &kp W &kp F &kp P &kp B    &kp J     &kp L &kp U    &kp Y   &kp QUOT
-		&kp A &kp R &kp S &kp T &kp G    &kp M     &kp N &kp E    &kp I   &kp O
-		&kp Z &kp X &kp C &kp D &kp V    &kp K     &kp H &kp CMMA &kp DOT &kp FSLH
-        &mt LSFT BSPC &lt 1 RET          &lt 4 TAB &mt RSFT SPC 
-		>;
-		};
+            default_layer {
+                bindings = <
+                &kp Q &kp W &kp F &kp P &kp B    &kp J     &kp L &kp U    &kp Y   &kp QUOT
+                &kp A &kp R &kp S &kp T &kp G    &kp M     &kp N &kp E    &kp I   &kp O
+                &kp Z &kp X &kp C &kp D &kp V    &kp K     &kp H &kp CMMA &kp DOT &kp FSLH
+                &mt LSFT BSPC &lt 1 RET          &lt 3 TAB &mt RSFT SPC 
+                >;
+            };
 
-    one_layer {
-		bindings = <
-		&sk LCTL  &sk LALT  &sk LGUI  &none    &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR 
-		&kp LCTL  &kp LALT  &kp LGUI  &kp LSFT &kp LG(MINUS)  &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-		&kp LG(Z) &kp LG(X) &kp LG(C) &to 2    &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
-	    &trans &trans                                         &kp LC(LEFT) &kp LC(RIGHT)
-		>;
-		};
-		
-	two_layer {
-		bindings = <
-		&sk LCTL  &sk LALT  &sk LGUI  &LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
-		&kp LCTL  &kp LALT  &kp LGUI  &kp LSFT   &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-		&kp LG(Z) &kp LG(X) &kp LG(C) &to 5      &kp LG(0)       &kp CAPS     &caps_word &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &PSCRN
-		&to 0 &to 0  		                                     &kp LC(LEFT) &kp LC(RIGHT)
-		>;
-		};	
-		
-	three_layer {
-		bindings = <
-		&kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL  
-		&kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL  
-		&kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &to 5    &kp C_BRI_UP &kp C_BRI_UP &none 
-		&kp DEL &kp ESC  		                      &to 0 &to 0 
-		>;
-        };	
+            one_layer {
+                bindings = <
+                &sk LCTL  &sk LALT  &sk LGUI  &none    &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR 
+                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT &kp LG(MINUS)  &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
+                &kp LG(Z) &kp LG(X) &kp LG(C) &to 2    &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
+                &trans &trans                                         &kp LC(LEFT) &kp LC(RIGHT)
+                >;
+            };
         
-    four_layer {
-		bindings = <
-		&kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL 
-		&kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL 
-		&kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 3    &kp C_BRI_UP &kp C_BRI_UP &none 
-		&mt LSFT DEL &kp ESC 	                             &trans        &trans 
-		>;
-		};	
+            two_layer {
+                bindings = <
+                &sk LCTL  &sk LALT  &sk LGUI  &LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
+                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT   &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
+                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5      &kp LG(0)       &kp CAPS     &caps_word &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
+                &to 0 &to 0                                              &kp LC(LEFT) &kp LC(RIGHT)
+                >;
+            };    
+        
+            three_layer {
+                bindings = <
+                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL 
+                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL 
+                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4    &kp C_BRI_UP &kp C_BRI_UP &none 
+                &mt LSFT DEL &kp ESC                                 &trans        &trans 
+                >;
+            };    
 
-    five_layer {
-		bindings = <
-		&bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &reset      &none &none &none &none
-		&bt BT_CLR    &none        &none        &none        &bt BT_CLR    &bootloader &none &none &none &none
-		&none         &none        &none        &none        &none         &none       &none &none &none &none 
-		&to 0 &to 0	                                                       &to 6 &to 6
-		>;
-		};	
+            four_layer {
+                bindings = <
+                &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL  
+                &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL  
+                &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &to 5    &kp C_BRI_UP &kp C_BRI_UP &none 
+                &kp DEL &kp ESC                               &to 0 &to 0 
+                >;
+            };
 
-    six_layer {
-		bindings = <
-		&none &none &none &none &none    &none &none &none &none &none
-		&none &none &none &none &none    &none &none &none &none &none
-		&none &none &none &none &none    &none &none &none &none &none 
-		&none &none 	                 &none &none
-		>;
-		};	
-    };
+            five_layer {
+                bindings = <
+                &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &reset      &none &none &none &none
+                &bt BT_CLR    &none        &none        &none        &bt BT_CLR    &bootloader &none &none &none &none
+                &none         &none        &none        &none        &none         &none       &none &none &none &none 
+                &to 0 &to 0                                                        &to 6 &to 6
+                >;
+            };    
+
+            six_layer {
+                bindings = <
+                &none &none &none &none &none    &none &none &none &none &none
+                &none &none &none &none &none    &none &none &none &none &none
+                &none &none &none &none &none    &none &none &none &none &none 
+                &none &none                      &none &none
+                >;
+            };    
+        };
 };

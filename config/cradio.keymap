@@ -19,7 +19,7 @@
 };
 
 &sk {    
-    release-after-ms = <3500>;
+    release-after-ms = <3000>;
 };
 
 / { 
@@ -33,30 +33,6 @@
                 bindings = <&kp LGUI>;
             };
 
-            combo_lctl {
-                timeout-ms = <50>;
-                key-positions = <11 12>;
-                bindings = <&kp LCTL>;
-            };
-
-            combo_lalt {
-                timeout-ms = <50>;
-                key-positions = <10 11>;
-                bindings = <&kp LALT>;
-            };
-
-            combo_ralt {
-                timeout-ms = <50>;
-                key-positions = <18  19>;
-                bindings = <&kp RALT>;
-            };
-           
-            combo_rctl {
-                timeout-ms = <50>;
-                key-positions = <17 18>;
-                bindings = <&kp RCTL>;
-            };
-
             combo_rgui {
                timeout-ms = <50>;
                key-positions = <15 16>;
@@ -65,13 +41,13 @@
 
             combo_up {
                timeout-ms = <50>;
-               key-positions = <5  6>;
+               key-positions = <6  16>;
                bindings = <&kp UP>;
             };
 
             combo_down {
                timeout-ms = <50>;
-               key-positions = <25  26>;
+               key-positions = <6  26>;
                bindings = <&kp DOWN>;
             };
 
@@ -79,6 +55,18 @@
                timeout-ms = <50>;
                key-positions = <14 15>;
                bindings = <&to 0>;
+            };
+
+            combo_l5 {
+               timeout-ms = <50>;
+               key-positions = <24 25>;
+               bindings = <&to 5>;
+            };
+
+            combo_l6 {
+               timeout-ms = <50>;
+               key-positions = <4 5>;
+               bindings = <&to 6>;
             };
 
         };
@@ -108,8 +96,8 @@
                 bindings = <
                 &sk LCTL  &sk LALT  &sk LGUI  &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
                 &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5         &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
-                &to 0 &to 0                                                 &kp LC(LEFT) &kp LC(RIGHT)
+                &kp LG(Z) &kp LG(X) &kp LG(C) &trans        &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
+                &trans    &to 0                                             &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };    
         
@@ -126,16 +114,16 @@
                 bindings = <
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &sk RSFT &sk RGUI     &sk RALT     &sk RCTL  
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL  
-                &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &to 5    &kp C_BRI_UP &kp C_BRI_UP &none 
-                &kp DEL &kp ESC                               &to 0 &to 0 
+                &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans   &kp C_BRI_UP &kp C_BRI_UP &none 
+                &kp DEL &kp ESC                               &to 0 &kp SPC 
                 >;
             };
 
             five_layer {
                 bindings = <
-                &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &reset      &none &none &none &none
-                &bt BT_CLR    &none        &none        &none        &bt BT_CLR    &bootloader &none &none &none &none
-                &none         &none        &none        &none        &none         &none       &none &none &none &none 
+                &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none &reset      &none &none &none
+                &bt BT_CLR    &none        &none        &none        &kp B         &kp T &bootloader &none &none &none
+                &none         &none        &none        &none        &none         &none &none       &none &none &none 
                 &to 0 &to 0                                                        &to 6 &to 6
                 >;
             };    

@@ -93,7 +93,7 @@
 
             one_layer {
                 bindings = <
-                &sk LCTL  &sk LALT  &sk LGUI  &none    &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR 
+                &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR 
                 &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT &kp LG(MINUS)  &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
                 &kp LG(Z) &kp LG(X) &kp LG(C) &to 2    &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
                 &trans &trans                                         &kp LC(LEFT) &kp LC(RIGHT)
@@ -104,14 +104,14 @@
                 bindings = <
                 &sk LCTL  &sk LALT  &sk LGUI  &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
                 &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5         &kp LG(0)       &kp CAPS     &caps_word &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
-                &to 0 &to 0                                              &kp LC(LEFT) &kp LC(RIGHT)
+                &kp LG(Z) &kp LG(X) &kp LG(C) &to 5         &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
+                &to 0 &to 0                                                 &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };    
         
             three_layer {
                 bindings = <
-                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL 
+                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &sk RSFT &sk RGUI     &sk RALT     &sk RCTL 
                 &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL 
                 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4    &kp C_BRI_UP &kp C_BRI_UP &none 
                 &mt LSFT DEL &kp ESC                                 &trans        &trans 
@@ -120,7 +120,7 @@
 
             four_layer {
                 bindings = <
-                &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &none    &sk RGUI     &sk RALT     &sk RCTL  
+                &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &sk RSFT &sk RGUI     &sk RALT     &sk RCTL  
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL  
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &to 5    &kp C_BRI_UP &kp C_BRI_UP &none 
                 &kp DEL &kp ESC                               &to 0 &to 0 

@@ -85,36 +85,36 @@
 
             one_layer {
                 bindings = <
-                &sk LCTL  &sk LALT  &sk LGUI  &sk LSFT &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp STAR  &kp LPAR  &kp RPAR 
-                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT &kp LG(MINUS)  &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0 
-                &kp LG(Z) &kp LG(X) &kp LG(C) &to 2    &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SEMI 
-                &trans &trans                                         &kp LC(LEFT) &kp LC(RIGHT)
+                &kp LG(SPC) &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp LPAR &kp RPAR &kp STAR
+                &sk LCTL    &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp COLON
+                &kp LG(Z)   &kp LG(X)  &kp LG(C)     &to 2         &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp SEMI 
+                &trans &trans                                                     &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };
         
             two_layer {
                 bindings = <
-                &sk LCTL  &sk LALT  &sk LGUI  &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
-                &kp LCTL  &kp LALT  &kp LGUI  &kp LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-                &kp LG(Z) &kp LG(X) &kp LG(C) &trans        &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
-                &trans    &to 0                                             &kp LC(LEFT) &kp LC(RIGHT)
+                &kp LG(SPC) &kp LG(SPC) &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
+                &sk LCTL    &sk LALT    &sk LGUI      &sk LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
+                &kp LG(Z)   &kp LG(X)   &kp LG(C)     &trans        &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
+                &trans    &to 0                                                     &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };    
         
             three_layer {
                 bindings = <
-                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &sk RSFT &sk RGUI     &sk RALT     &sk RCTL 
-                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL 
-                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4    &kp C_BRI_UP &kp C_BRI_UP &none 
+                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCT 
+                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &mt LSFT DEL &kp ESC                                 &trans        &trans 
                 >;
             };    
 
             four_layer {
                 bindings = <
-                &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &sk RSFT &sk RGUI     &sk RALT     &sk RCTL  
-                &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &kp RSFT &sk RGUI     &sk RALT     &sk RCTL  
-                &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans   &kp C_BRI_UP &kp C_BRI_UP &none 
+                &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCT 
+                &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans           &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &kp DEL &kp ESC                               &to 0 &kp SPC 
                 >;
             };

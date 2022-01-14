@@ -104,7 +104,7 @@
             three_layer {
                 bindings = <
                 &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
-                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCT 
+                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &mt LSFT DEL &kp ESC                                 &trans        &trans 
                 >;
@@ -113,7 +113,7 @@
             four_layer {
                 bindings = <
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
-                &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCT 
+                &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans           &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &kp DEL &kp ESC                               &to 0 &kp SPC 
                 >;

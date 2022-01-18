@@ -47,7 +47,7 @@
 
             combo_down {
                timeout-ms = <50>;
-               key-positions = <6  26>;
+               key-positions = <16  26>;
                bindings = <&kp DOWN>;
             };
 
@@ -85,10 +85,10 @@
 
             one_layer {
                 bindings = <
-                &kp LG(SPC) &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp LPAR &kp RPAR &kp STAR
-                &sk LCTL    &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp COLON
-                &kp LG(Z)   &kp LG(X)  &kp LG(C)     &to 2         &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp SEMI 
-                &trans &trans                                                     &kp LC(LEFT) &kp LC(RIGHT)
+                &kp LG(SPC) &caps_word &kp LEFT  &kp RIGHT &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp LPAR &kp RPAR &kp STAR
+                &sk LCTL    &sk LALT   &sk LGUI  &sk LSFT  &kp LG(MINUS)  &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp COLON
+                &kp LG(Z)   &kp LG(X)  &kp LG(C) &to 2     &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp SEMI 
+                &trans &trans                                             &kp LC(LEFT) &kp LC(RIGHT)
                 >;
             };
         

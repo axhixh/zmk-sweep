@@ -73,19 +73,19 @@
 
             one_layer {
                 bindings = <
-                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4) &kp LG(EQUAL)  &kp GRAVE &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
-                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT     &kp LG(MINUS)  &kp MINUS &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp SEMI
-                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)  &kp LG(V)      &kp EQUAL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp BSLH 
+                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp GRAVE &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
+                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp MINUS &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp SEMI
+                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &kp EQUAL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp BSLH 
                 &trans &trans                                                  &kp LBKT  &kp RBKT
                 >;
             };
         
             two_layer {
                 bindings = <
-                &kp INS   &kp HOME     &kp UP      &kp END    &kp PG_UP   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
-                &kp SLCK  &kp LEFT     &kp DOWN    &kp RIGHT  &kp PG_DN   &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
-                &kp PSCRN &kp LC(LEFT) &kp LG(SPC) &LC(RIGHT) &caps_word  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &kp DEL   &kp ESC                                         &trans        &trans 
+                &kp INS   &kp HOME     &kp UP      &kp END       &kp PG_UP   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp SLCK  &kp LEFT     &kp DOWN    &kp RIGHT     &kp PG_DN   &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
+                &kp PSCRN &kp LC(LEFT) &kp LG(SPC) &kp LC(RIGHT) &caps_word  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
+                &kp DEL   &kp ESC                                            &trans        &trans 
                 >;
             };    
         

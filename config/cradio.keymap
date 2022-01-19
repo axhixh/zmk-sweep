@@ -39,34 +39,22 @@
                bindings = <&kp RGUI>;
             };
 
-            combo_up {
-               timeout-ms = <50>;
-               key-positions = <6  16>;
-               bindings = <&kp UP>;
-            };
-
-            combo_down {
-               timeout-ms = <50>;
-               key-positions = <16  26>;
-               bindings = <&kp DOWN>;
-            };
-
             combo_l0 {
                timeout-ms = <50>;
                key-positions = <14 15>;
                bindings = <&to 0>;
             };
 
-            combo_l5 {
+            combo_l4 {
                timeout-ms = <50>;
                key-positions = <24 25>;
-               bindings = <&to 5>;
+               bindings = <&to 4>;
             };
 
-            combo_l6 {
+            combo_l5 {
                timeout-ms = <50>;
                key-positions = <4 5>;
-               bindings = <&to 6>;
+               bindings = <&to 5>;
             };
 
         };
@@ -79,56 +67,47 @@
                 &kp Q &kp W &kp F &kp P &kp B    &kp J     &kp L &kp U    &kp Y   &kp QUOT
                 &kp A &kp R &kp S &kp T &kp G    &kp M     &kp N &kp E    &kp I   &kp O
                 &kp Z &kp X &kp C &kp D &kp V    &kp K     &kp H &kp CMMA &kp DOT &kp FSLH
-                &mt LSFT BSPC &lt 1 RET          &lt 3 TAB &mt RSFT SPC 
+                &mt LSFT BSPC &lt 1 RET          &lt 2 TAB &mt RSFT SPC 
                 >;
             };
 
             one_layer {
                 bindings = <
-                &kp LG(SPC) &caps_word &kp LEFT  &kp RIGHT &kp LG(EQUAL)  &kp GRAVE &kp BSLH  &kp LPAR &kp RPAR &kp STAR
-                &sk LCTL    &sk LALT   &sk LGUI  &sk LSFT  &kp LG(MINUS)  &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp COLON
-                &kp LG(Z)   &kp LG(X)  &kp LG(C) &to 2     &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp SEMI 
-                &trans &trans                                             &kp LC(LEFT) &kp LC(RIGHT)
+                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4) &kp LG(EQUAL)  &kp GRAVE &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
+                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT     &kp LG(MINUS)  &kp MINUS &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp SEMI
+                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)  &kp LG(V)      &kp EQUAL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp BSLH 
+                &trans &trans                                                  &kp LBKT  &kp RBKT
                 >;
             };
         
             two_layer {
                 bindings = <
-                &kp LG(SPC) &kp LG(SPC) &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)   &kp PG_UP    &kp HOME   &kp UP           &kp END           &kp INS 
-                &sk LCTL    &sk LALT    &sk LGUI      &sk LSFT      &kp LG(MINUS)   &kp PG_DN    &kp LEFT   &kp DOWN         &kp RIGHT         &kp SLCK
-                &kp LG(Z)   &kp LG(X)   &kp LG(C)     &trans        &kp LG(0)       &caps_word   &kp CAPS   &kp LA(LG(LEFT)) &kp LA(LG(RIGHT)) &kp PSCRN
-                &trans    &to 0                                                     &kp LC(LEFT) &kp LC(RIGHT)
+                &kp INS   &kp HOME     &kp UP      &kp END    &kp PG_UP   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp SLCK  &kp LEFT     &kp DOWN    &kp RIGHT  &kp PG_DN   &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
+                &kp PSCRN &kp LC(LEFT) &kp LG(SPC) &LC(RIGHT) &caps_word  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
+                &kp DEL   &kp ESC                                         &trans        &trans 
                 >;
             };    
         
             three_layer {
                 bindings = <
-                &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCT     &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
-                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5    &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
-                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0    &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &mt LSFT DEL &kp ESC                                 &trans        &trans 
-                >;
-            };    
-
-            four_layer {
-                bindings = <
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans           &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &kp DEL &kp ESC                               &to 0 &kp SPC 
+                &kp BSPC &kp RET                              &to 0 &kp SPC 
                 >;
             };
 
-            five_layer {
+            four_layer {
                 bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none &reset      &none &none &none
                 &bt BT_CLR    &none        &none        &none        &kp B         &kp T &bootloader &none &none &none
                 &none         &none        &none        &none        &none         &none &none       &none &none &none 
-                &to 0 &to 0                                                        &to 6 &to 6
+                &to 0 &to 0                                                        &to 5 &to 5
                 >;
             };    
 
-            six_layer {
+            five_layer {
                 bindings = <
                 &none &none &none &none &none    &none &none &none &none &none
                 &none &none &none &none &none    &none &none &none &none &none

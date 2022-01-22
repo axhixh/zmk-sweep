@@ -73,10 +73,10 @@
 
             one_layer {
                 bindings = <
-                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp GRAVE &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0
-                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp MINUS &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp SEMI
-                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &kp EQUAL &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp BSLH 
-                &trans &trans                                                  &kp LBKT  &kp RBKT
+                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5
+                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp SEMI
+                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH 
+                &trans &trans                                                   &kp GRAVE &kp NUM_0
                 >;
             };
         

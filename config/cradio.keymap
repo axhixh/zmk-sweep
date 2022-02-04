@@ -27,16 +27,16 @@
         combos {
             compatible = "zmk,combos";
 
-            combo_lgui {
+            combo_lsft {
                 timeout-ms = <50>;
                 key-positions = <13 14>;
-                bindings = <&kp LGUI>;
+                bindings = <&kp LSFT>;
             };
 
-            combo_rgui {
+            combo_rsft {
                timeout-ms = <50>;
                key-positions = <15 16>;
-               bindings = <&kp RGUI>;
+               bindings = <&kp RSFT>;
             };
 
             combo_l0 {

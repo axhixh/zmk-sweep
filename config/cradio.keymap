@@ -64,28 +64,28 @@
                 
             default_layer {
                 bindings = <
-                &kp Q &kp W &kp F &kp P &kp B    &kp J     &kp L &kp U    &kp Y   &kp QUOT
-                &kp A &kp R &kp S &kp T &kp G    &kp M     &kp N &kp E    &kp I   &kp O
-                &kp Z &kp X &kp C &kp D &kp V    &kp K     &kp H &kp CMMA &kp DOT &kp FSLH
-                &mt LSFT BSPC &lt 1 RET          &lt 2 TAB &mt RSFT SPC 
+                &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U    &kp Y   &kp QUOT
+                &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E    &kp I   &kp O
+                &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp CMMA &kp DOT &kp FSLH
+                &mt LSFT RET &lt 1 ESC           &lt 2 BSPC &mt RSFT SPC 
                 >;
             };
 
             one_layer {
                 bindings = <
-                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp LBKT  &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp RBKT 
-                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp MINUS &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp SEMI
-                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &kp EQUAL &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp BSLH 
-                &trans &trans                                                   &kp GRAVE &kp NUM_0
+                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp PG_UP  &kp HOME     &kp UP        &kp END   &kp PAUSE_BREAK  
+                &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp PG_DN  &kp LEFT     &kp DOWN      &kp RIGHT &kp SLCK  
+                &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &caps_word &kp LC(LEFT) &kp LC(RIGHT) &kp INS   &kp PSCRN 
+                &trans &trans                                                   &kp DEL    &kp TAB                                          
                 >;
             };
-        
+
             two_layer {
                 bindings = <
-                &kp INS   &kp HOME     &kp UP        &kp END     &kp PG_UP   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
-                &kp SLCK  &kp LEFT     &kp DOWN      &kp RIGHT   &kp PG_DN   &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
-                &kp PSCRN &kp LC(LEFT) &kp LC(RIGHT) &kp LG(SPC) &caps_word  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &kp DEL   &kp ESC                                            &trans        &trans 
+                &kp BSLH  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
+                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
+                &kp SEMI  &kp GRAVE                                &trans        &trans 
                 >;
             };    
         
@@ -94,7 +94,7 @@
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans           &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &kp BSPC &kp RET                              &to 0 &kp SPC 
+                &kp RET &kp ESC                             &to 0 &kp SPC 
                 >;
             };
 

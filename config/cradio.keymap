@@ -67,7 +67,7 @@
                 &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U    &kp Y   &kp QUOT
                 &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E    &kp I   &kp O
                 &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp CMMA &kp DOT &kp FSLH
-                &mt LSFT RET &lt 1 ESC           &lt 2 BSPC &mt RSFT SPC 
+                &mt LSFT ESC &lt 1 RET           &lt 2 BSPC &mt RSFT SPC 
                 >;
             };
 
@@ -94,7 +94,7 @@
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp F9 &kp F10 &kp F11 &kp F12 &kp LG(0)      &kp C_VOL_DN  &trans           &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
-                &kp RET &kp ESC                             &to 0 &kp SPC 
+                &kp ESC &kp RET                               &to 0 &kp SPC 
                 >;
             };
 

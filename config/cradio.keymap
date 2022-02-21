@@ -85,7 +85,7 @@
 
             three_layer {
                 bindings = <
-                &kp PIPE  &kp UNDER &kp PLUS &kp LBKC &kp RBKC   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp PIPE  &kp UNDER &kp PLUS &kp LBRC &kp RBRC   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
                 &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR   &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &kp COLON &kp TILDE                              &trans        &trans 

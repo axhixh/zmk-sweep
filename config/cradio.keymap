@@ -67,7 +67,7 @@
 
             one_layer {
                 bindings = <
-                &none     &caps_word &kp LC(LG(3)) &kp LC(LG(4)) &kp LG(EQUAL)  &kp PG_UP  &kp HOME     &kp UP        &kp END   &kp PAUSE_BREAK  
+                &none     &caps_word &kp LA(LG(3)) &kp LA(LG(4)) &kp LG(EQUAL)  &kp PG_UP  &kp HOME     &kp UP        &kp END   &kp PAUSE_BREAK  
                 &sk LCTL  &sk LALT   &sk LGUI      &sk LSFT      &kp LG(MINUS)  &kp PG_DN  &kp LEFT     &kp DOWN      &kp RIGHT &kp SLCK  
                 &kp LG(Z) &kp LG(X)  &kp LG(C)     &kp LG(SPC)   &kp LG(V)      &caps_word &kp LC(LEFT) &kp LC(RIGHT) &kp INS   &kp PSCRN 
                 &trans &trans                                                   &kp DEL    &kp TAB                                          

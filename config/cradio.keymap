@@ -27,34 +27,28 @@
         combos {
             compatible = "zmk,combos";
 
-            combo_lsft {
-                timeout-ms = <50>;
-                key-positions = <13 14>;
-                bindings = <&kp LSFT>;
-            };
-
-            combo_rsft {
+            combo_symb {
                timeout-ms = <50>;
                key-positions = <15 16>;
-               bindings = <&kp RSFT>;
+               bindings = <&mt 3>;
             };
 
-            combo_l0 {
+            combo_default {
                timeout-ms = <50>;
                key-positions = <14 15>;
                bindings = <&to 0>;
             };
 
-            combo_l4 {
+            combo_bluetooth {
                timeout-ms = <50>;
                key-positions = <24 25>;
-               bindings = <&to 4>;
+               bindings = <&to 5>;
             };
 
-            combo_l5 {
+            combo_blank {
                timeout-ms = <50>;
                key-positions = <4 5>;
-               bindings = <&to 5>;
+               bindings = <&to 6>;
             };
 
         };
@@ -84,12 +78,21 @@
                 bindings = <
                 &kp BSLH  &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp NUM_4 &kp NUM_5  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
-                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0  &kp C_VOL_DN  &to 3            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
+                &kp NUM_6 &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp NUM_0  &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
                 &kp SEMI  &kp GRAVE                                &trans        &trans 
                 >;
             };    
-        
+
             three_layer {
+                bindings = <
+                &kp PIPE  &kp UNDER &kp PLUS &kp LBKC &kp RBKC   &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
+                &kp EXCL  &kp AT    &kp HASH &kp DLLR &kp PRCNT  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
+                &kp CARET &kp AMPS  &kp STAR &kp LPAR &kp RPAR   &kp C_VOL_DN  &to 4            &kp LA(LG(DOWN)) &kp LA(LG(F))     &kp C_BRI_DN
+                &kp COLON &kp TILDE                              &trans        &trans 
+                >;
+            };    
+        
+            four_layer {
                 bindings = <
                 &kp F1 &kp F2  &kp F3  &kp F4  &kp LG(EQUAL)  &kp C_VOL_UP  &kp LA(LG(LEFT)) &kp LA(LG(UP))   &kp LA(LG(RIGHT)) &kp C_BRI_UP
                 &kp F5 &kp F6  &kp F7  &kp F8  &kp LG(MINUS)  &kp K_MUTE    &sk RSFT         &sk RGUI         &sk RALT          &sk RCTL
@@ -98,16 +101,16 @@
                 >;
             };
 
-            four_layer {
+            five_layer {
                 bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &none &reset      &none &none &none
                 &bt BT_CLR    &none        &none        &none        &kp B         &kp T &bootloader &none &none &none
                 &none         &none        &none        &none        &none         &none &none       &none &none &none 
-                &to 0 &to 0                                                        &to 5 &to 5
+                &to 0 &to 0                                                        &to 6 &to 6
                 >;
             };    
 
-            five_layer {
+            six_layer {
                 bindings = <
                 &none &none &none &none &none    &none &none &none &none &none
                 &none &none &none &none &none    &none &none &none &none &none

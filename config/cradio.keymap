@@ -30,7 +30,7 @@
             combo_symb {
                timeout-ms = <50>;
                key-positions = <15 16>;
-               bindings = <&mt 3>;
+               bindings = <&mo 3>;
             };
 
             combo_default {

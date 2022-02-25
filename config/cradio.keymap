@@ -11,15 +11,21 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;
+    tapping_term_ms = <200>;   
 };
+
+&lt {
+    flavor = "tap-preferred";
+    tapping_term_ms = <250>;
+    quick-tap-ms = <75>;
+}
 
 &caps_word {    
     continue-list = <UNDERSCORE MINUS>;
 };
 
 &sk {    
-    release-after-ms = <3000>;
+    release-after-ms = <2500>;
 };
 
 / { 

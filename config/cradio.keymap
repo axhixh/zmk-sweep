@@ -11,13 +11,14 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;   
+    tapping-term-ms = <200>;   
+    quick-tap-ms = <15>;
 };
 
 &lt {
     flavor = "tap-preferred";
-    tapping_term_ms = <250>;
-    quick-tap-ms = <75>;
+    tapping-term-ms = <250>;
+    quick-tap-ms = <15>;
 };
 
 &caps_word {    
@@ -59,15 +60,47 @@
 
         };
 
+        behaviors {
+            hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_MODS";
+                #binding-cells = <2>;
+                tapping-term-ms = <300>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+
+            hs: homerow_shifts {
+                compatible = "zmk,behavior-hold-tap";
+                label = "HOMEROW_SHIFTS";
+                #binding-cells = <2>;
+                tapping-term-ms = <300>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+
+        	td: tapdance {
+                compatible = "zmk,behavior-hold-tap";
+                label = "TAPDANCE";
+                #binding-cells = <2>;
+                tapping-term-ms = <190>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+            };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
                 
             default_layer {
                 bindings = <
-                &kp Q &kp W &kp F &kp P &kp B    &kp J &kp L &kp U    &kp Y   &kp QUOT
-                &kp A &kp R &kp S &kp T &kp G    &kp M &kp N &kp E    &kp I   &kp O
-                &kp Z &kp X &kp C &kp D &kp V    &kp K &kp H &kp CMMA &kp DOT &kp FSLH
-                &mt LSFT ESC &lt 1 RET           &lt 2 SPC &mt RSFT BSPC 
+                &kp Q      &kp W      &kp F      &kp P      &kp B    &kp J &kp L      &kp U      &kp Y      &kp QUOT
+                &hm LCTL A &hm LALT R &hm LGUI S &hs LSFT T &kp G    &kp M &hs RSFT N &hm RGUI E &hm RALT I &kp RCTL O
+                &kp Z      &kp X      &kp C      &kp D      &kp V    &kp K &kp H      &kp CMMA   &kp DOT    &kp FSLH
+                &mt LSFT ESC &lt 1 RET                               &lt 2 SPC &mt RSFT BSPC 
                 >;
             };
 

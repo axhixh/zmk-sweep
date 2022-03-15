@@ -12,13 +12,13 @@
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <200>;   
-    quick-tap-ms = <15>;
+    quick-tap-ms = <0>;
 };
 
 &lt {
     flavor = "tap-preferred";
     tapping-term-ms = <250>;
-    quick-tap-ms = <15>;
+    quick-tap-ms = <0>;
 };
 
 &caps_word {    
@@ -65,7 +65,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_MODS";
                 #binding-cells = <2>;
-                tapping-term-ms = <350>;
+                tapping-term-ms = <250>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -75,7 +75,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 label = "HOMEROW_SHIFTS";
                 #binding-cells = <2>;
-                tapping-term-ms = <200>;
+                tapping-term-ms = <190>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
